@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Application Tracker</title>
+</head>
+<body>
+<form onsubmit="return validateform()" action="#" method="POST">
+    <div class="container mainContainer col-6">
+        <h1 class="title text-center">Job Application Tracker</h1>
+        <hr class="titleHr">
+        <div class="row">
+            <div class="container col-6">
+                <label>Username</label>
+                <input class="form-control border-primary" type="text" name="username" id="username" placeholder="Enter Your Username" onkeyup="validateusername()">
+                <div id="errorUsername"></div>
+            </div>
+            <div class="container col-6">
+                <label>Email</label>
+                <input class="form-control border-primary" type="text" name="email" id="email" placeholder="Enter Your Email" onkeyup="validateemail()">
+                <div id="errorEmail"></div>
+            </div>
+            <div class="container col-6">
+                <label>Mobile</label>
+                <input class="form-control border-primary" type="text" name="mobile" id="mobile" placeholder="Enter Your Mobile Number" onkeyup="validatemobile()">
+                <div id="errorMobile"></div>
+            </div>
+            <div class="container col-6">
+                <label>Date Applied</label>
+                <input class="form-control border-primary" type="Date" name="date" id="date" onkeyup="validatedate()">
+                <div id="errorDate"></div>
+            </div>
+            <div class="container col-6">
+                <label>Website</label>
+                <input class="form-control border-primary" type="text" name="website" id="website" value="http://www." placeholder="http://www." onkeyup="validatewebsite()">
+                <div id="errorWebsite"></div>
+            </div>
+            <div class="container col-6">
+                <label>Password</label>
+                <input class="form-control border-primary" type="password" name="password" id="password" placeholder="Enter Your Password" onkeyup="validatepassword()">
+                <div id="errorPassword"></div>
+            </div>
+            <div class="container col-6">
+                <label>Position Applied</label>
+                <input class="form-control border-primary" type="text" name="position" id="position" placeholder="Enter Post You Applied For" onkeyup="validateposition()">
+                <div id="errorPosition"></div>
+            </div>
+            <div class="container col-6">
+                <label>Other Details</label>
+                <textarea class="form-control border-primary" type="textarea" name="details" id="details" placeholder="REF_CODE/CTC/POSITION/JD/Technologies" onkeyup="validatedetails()"></textarea>
+                <div id="errorDetails"></div>
+            </div>
+            <div class="container col-12">
+                <hr class="titleHr">
+                <button class="form-control btn btn-success" id="submit" name="submit">Submit</button>
+                <div id="errorSubmit"></div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>

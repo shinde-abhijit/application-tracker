@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    display: grid;
+    background-color: #303132;
+    color: #04f5ed;
+    font-size: 18px;
+    font-weight: 400;
+    align-items: center;
+}
+.mainContainer{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.mainContainer:hover{
+    box-shadow: 0 0 10px #04f5ed;
+    transition: 2s ease-in;
+}
+.form-control{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.border-primary:focus{
+    box-shadow: 0 0 6px #04f5ed;
+}
+input{
+    margin-bottom: 5px;
+}
+.titleHr{
+    border-top: 1px solid #04f5ed;
+}
+#errorUsername,#errorEmail,#errorMobile,#errorDate,#errorWebsite,#errorPassword,#errorPosition,#errorDetails,#errorSubmit{
+    font-size: 14px;
+    font-weight: 500;
+    color: red;
+}
+i{
+    color: #04f5ed;
+}
+textarea{
+    resize: none;
+}
